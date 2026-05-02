@@ -9,16 +9,29 @@
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-amber-800: oklch(47.3% 0.137 46.201);
+    --color-sky-500: oklch(68.5% 0.169 237.323);
+    --color-sky-700: oklch(50% 0.134 242.749);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-indigo-600: oklch(51.1% 0.262 276.966);
+    --color-indigo-700: oklch(45.7% 0.24 277.023);
+    --color-violet-500: oklch(60.6% 0.25 292.717);
+    --color-violet-600: oklch(54.1% 0.281 293.009);
+    --color-violet-700: oklch(49.1% 0.27 292.581);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -220,14 +233,26 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-\[9\] {
+    margin-block: 9;
+  }
+  .my-\[9px\] {
+    margin-block: 9px;
+  }
   .my-\[21px\] {
     margin-block: 21px;
+  }
+  .my-\[24px\] {
+    margin-block: 24px;
   }
   .my-\[30\.9px\] {
     margin-block: 30.9px;
   }
   .my-\[30px\] {
     margin-block: 30px;
+  }
+  .my-\[bg-white\] {
+    margin-block: bg-white;
   }
   .mt-\[-48px\] {
     margin-top: -48px;
@@ -243,6 +268,9 @@
   }
   .mt-\[-px\] {
     margin-top: -px;
+  }
+  .mt-\[24px\] {
+    margin-top: 24px;
   }
   .mt-\[48px\] {
     margin-top: 48px;
@@ -307,6 +335,9 @@
   .h-\[6px\] {
     height: 6px;
   }
+  .h-\[9px\] {
+    height: 9px;
+  }
   .h-\[48\] {
     height: 48;
   }
@@ -352,6 +383,12 @@
   .w-167 {
     width: calc(var(--spacing) * 167);
   }
+  .w-\[9px\] {
+    width: 9px;
+  }
+  .w-\[82px\] {
+    width: 82px;
+  }
   .w-\[262px\] {
     width: 262px;
   }
@@ -379,6 +416,9 @@
   .resize {
     resize: both;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -388,11 +428,26 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-\[9px\] {
+    gap: 9px;
+  }
+  .gap-\[12px\] {
+    gap: 12px;
   }
   .gap-\[32px\] {
     gap: 32px;
@@ -400,12 +455,24 @@
   .gap-\[48px\] {
     gap: 48px;
   }
+  .gap-\[280px\] {
+    gap: 280px;
+  }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-\[\#D9D1C7\] {
+    border-color: #D9D1C7;
   }
   .bg-\[\#0A0F1A\] {
     background-color: #0A0F1A;
@@ -415,6 +482,24 @@
   }
   .bg-\[\#C5A059\] {
     background-color: #C5A059;
+  }
+  .bg-\[\#E8E0D5\] {
+    background-color: #E8E0D5;
+  }
+  .bg-\[\#F8F8F8\] {
+    background-color: #F8F8F8;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-\[\#e8e0d5\] {
+    background-color: #e8e0d5;
+  }
+  .bg-\[\#e8e0d5dc\] {
+    background-color: #e8e0d5dc;
+  }
+  .bg-\[\#e8e0d5f3\] {
+    background-color: #e8e0d5f3;
   }
   .bg-\[\(\)\] {
     background-color: ();
@@ -428,6 +513,9 @@
   .bg-\[url\] {
     background-color: url;
   }
+  .bg-amber-800 {
+    background-color: var(--color-amber-800);
+  }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
   }
@@ -437,11 +525,26 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-indigo-600 {
+    background-color: var(--color-indigo-600);
+  }
   .bg-red-400 {
     background-color: var(--color-red-400);
   }
   .bg-red-600 {
     background-color: var(--color-red-600);
+  }
+  .bg-sky-500 {
+    background-color: var(--color-sky-500);
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-violet-500 {
+    background-color: var(--color-violet-500);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-\[url\(\"\"\)\] {
     background-image: url("");
@@ -587,6 +690,9 @@
   .px-\[8px\] {
     padding-inline: 8px;
   }
+  .px-\[24px\] {
+    padding-inline: 24px;
+  }
   .px-\[32\] {
     padding-inline: 32;
   }
@@ -599,11 +705,17 @@
   .px-\[64px\] {
     padding-inline: 64px;
   }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
   .py-\[\#12\] {
     padding-block: #12;
+  }
+  .py-\[8px\] {
+    padding-block: 8px;
   }
   .py-\[12\] {
     padding-block: 12;
@@ -614,8 +726,14 @@
   .py-\[21px\] {
     padding-block: 21px;
   }
+  .py-\[24px\] {
+    padding-block: 24px;
+  }
   .py-\[30px\] {
     padding-block: 30px;
+  }
+  .py-\[96px\] {
+    padding-block: 96px;
   }
   .py-\[361px\] {
     padding-block: 361px;
@@ -625,6 +743,9 @@
   }
   .py-\[1280px\] {
     padding-block: 1280px;
+  }
+  .py-\[bg-white\] {
+    padding-block: bg-white;
   }
   .py-\[px\] {
     padding-block: px;
@@ -636,6 +757,10 @@
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .text-\[64px\] {
     font-size: 64px;
   }
@@ -643,8 +768,15 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .text-\[\#0A0F1A\] {
     color: #0A0F1A;
+  }
+  .text-\[\#2E2E2E\] {
+    color: #2E2E2E;
   }
   .text-\[\#651313\] {
     color: #651313;
@@ -676,6 +808,83 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .hover\:border-\[\#CFC4B8\] {
+    &:hover {
+      @media (hover: hover) {
+        border-color: #CFC4B8;
+      }
+    }
+  }
+  .hover\:bg-\[\#E4C285\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #E4C285;
+      }
+    }
+  }
+  .hover\:bg-\[\#E8E0D5\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #E8E0D5;
+      }
+    }
+  }
+  .hover\:bg-\[\#EFE9E2\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #EFE9E2;
+      }
+    }
+  }
+  .hover\:bg-sky-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sky-700);
+      }
+    }
+  }
+  .hover\:bg-violet-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-violet-600);
+      }
+    }
+  }
+  .hover\:not-focus\:bg-indigo-700 {
+    &:hover {
+      @media (hover: hover) {
+        &:not(*:focus) {
+          background-color: var(--color-indigo-700);
+        }
+      }
+    }
+  }
+  .focus\:outline-2 {
+    &:focus {
+      outline-style: var(--tw-outline-style);
+      outline-width: 2px;
+    }
+  }
+  .focus\:outline-offset-2 {
+    &:focus {
+      outline-offset: 2px;
+    }
+  }
+  .focus\:outline-violet-500 {
+    &:focus {
+      outline-color: var(--color-violet-500);
+    }
+  }
+  .active\:bg-violet-700 {
+    &:active {
+      background-color: var(--color-violet-700);
+    }
   }
   .sm\:block {
     @media (width >= 40rem) {
