@@ -1,1 +1,14 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Mansalva&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+@theme{
+/*Header Fonts:*/
+--font-abhaya-libra: "Abhaya Libre", serif;
+--font-manrope: "Manrope", sans-serif;
+/*Hero Font:*/
+ --font-noto-serif: "Noto Serif", serif;
+}
+/* npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch */
