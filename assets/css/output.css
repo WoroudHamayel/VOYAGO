@@ -757,6 +757,12 @@
   .border-\[\#FFFFFF\]\/10 {
     border-color: color-mix(in oklab, #FFFFFF 10%, transparent);
   }
+  .border-\[\#FFFFFF\]\/20 {
+    border-color: color-mix(in oklab, #FFFFFF 20%, transparent);
+  }
+  .border-\[\#FFFFFF\]\/30 {
+    border-color: color-mix(in oklab, #FFFFFF 30%, transparent);
+  }
   .border-\[\#FFFFFF\]\/60 {
     border-color: color-mix(in oklab, #FFFFFF 60%, transparent);
   }
@@ -1026,6 +1032,10 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[1px\] {
+    --tw-tracking: 1px;
+    letter-spacing: 1px;
   }
   .tracking-\[2px\] {
     --tw-tracking: 2px;
